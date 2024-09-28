@@ -15,9 +15,11 @@
   <div id="progress-bar" style="position: absolute; left: 0%; right: 100%; top: 49%; bottom: 49%; background-color: white;"></div>
 
   <script src="Build/Build.loader.js"></script>
+  <script src="Assets\VKBridge\packages\core\src\index.ts"></script>
   <script>
+	bridge.send("VKWebAppInit", {});
     const settings = {
-      dataUrl: "Build/5846f83450a0c8598ae655f2606edf2c.data",
+      dataUrl: "Build/e112d4efe4e2edab82a48511174579cb.data",
       frameworkUrl: "Build/d5710a5f4687671f12fd767eb382c3af.js",
       codeUrl: "Build/db64c106576ef59b0b10467599a0ca1c.wasm",
       streamingAssetsUrl: "StreamingAssets",
