@@ -15,9 +15,9 @@
   <div id="progress-bar" style="position: absolute; left: 0%; right: 100%; top: 49%; bottom: 49%; background-color: white;"></div>
 
   <script src="Build/Build.loader.js"></script>
-  <script src="Assets\VKBridge\packages\core\src\index.ts"></script>
+  <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
   <script>
-	bridge.send("VKWebAppInit", {});
+	vkBridge.send("VKWebAppInit", {});
     const settings = {
       dataUrl: "Build/e112d4efe4e2edab82a48511174579cb.data",
       frameworkUrl: "Build/d5710a5f4687671f12fd767eb382c3af.js",
